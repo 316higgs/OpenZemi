@@ -1,0 +1,22 @@
+===================
+ How to use CMake?
+===================
+
+0. Prepare source files(and other source files and include files, if you need)
+   ./CMake
+   |
+   |--- include
+   |      |---- hello.h
+   |
+   |--- src
+         |----- main.cc
+1. Add CMakeLists.txt in the current directory.
+   Write the following contents in it:
+     cmake_minimum_required(VERSION 2.8)
+     project(Tutorial CXX)
+     add_executable(main main.cc)
+2. Make a new directory under CMake, and build in it:
+   $ mkdir build
+   $ cd build
+   $ cmake ..
+   $ make 
