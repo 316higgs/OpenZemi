@@ -1,11 +1,13 @@
 #include <iostream>
 #include "../include/hello.h"
+#include "../include/Global.h"
 #include "../include/MakeHands.h"
 
 int main() {
   //ShowHello();
 
   PrintJankenLogo();
+  MakeHands myMakeHands;
 
   int round = 0;
   bool trychecker = true;
@@ -13,20 +15,21 @@ int main() {
   while (trychecker==true) {
     std::cout << ">>" << "\033[1;36m" << "  [BATTLE: " << round << "]" << "\033[m" << std::endl;
 
-    judge = 0;
+    int judge = 0;
     while (judge==0) {
-      SelectMyHand(inputchecker);
-      GetMyHand(user);
+      myMakeHands.SelectMyHand(inputchecker);
+      myMakeHands.GetMyHand(user);
 
       //computer's hand
       srand(time(&t) % RAND_MAX);
       comp = rand() % 3;
-      GetCompHand(comp);
+      myMakeHands.GetCompHand(comp);
 
-      GetJudge(user, comp);
+      judge = myMakeHands.GetJudge(user, comp);
     }
 
     std::string retry;
+    bool responsechecker = false;
     while (responsechecker==false) {
       std::cout << ">>" << "\033[1;36m" << "  Try again?" << "\033[m" << " (Please input yes or no): ";
       std::cin >> retry;
@@ -56,6 +59,7 @@ int main() {
 }
 
 
+/*
 void PrintJankenLogo() {
   std::cout << " " << std::endl;
   std::cout << "=============================================================" << std::endl;
@@ -154,3 +158,4 @@ void SelectMyHand(bool inputchecker) {
     }
   }
 }
+*/

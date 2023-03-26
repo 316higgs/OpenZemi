@@ -1,3 +1,6 @@
-/Users/sedi/Documents/openprogram/CMakeVer/build/CMakeFiles/Janken.dir
-/Users/sedi/Documents/openprogram/CMakeVer/build/CMakeFiles/edit_cache.dir
-/Users/sedi/Documents/openprogram/CMakeVer/build/CMakeFiles/rebuild_cache.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles/Janken.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles/edit_cache.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles/rebuild_cache.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands/CMakeFiles/MakeHands.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands/CMakeFiles/edit_cache.dir
+/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands/CMakeFiles/rebuild_cache.dir

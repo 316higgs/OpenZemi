@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles /Users/sedi/Documents/openprogram/JankenApp/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles /Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands//CMakeFiles/progress.marks
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/MakeHands/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/MakeHands/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/MakeHands/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/MakeHands/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Janken
+# Convenience name for target.
+src/MakeHands/CMakeFiles/MakeHands.dir/rule:
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/MakeHands/CMakeFiles/MakeHands.dir/rule
+.PHONY : src/MakeHands/CMakeFiles/MakeHands.dir/rule
 
-# Build rule for target.
-Janken: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Janken
-.PHONY : Janken
-
-# fast build rule for target.
-Janken/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/build
-.PHONY : Janken/fast
-
-#=============================================================================
-# Target rules for targets named MakeHands
-
-# Build rule for target.
-MakeHands: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MakeHands
+# Convenience name for target.
+MakeHands: src/MakeHands/CMakeFiles/MakeHands.dir/rule
 .PHONY : MakeHands
 
 # fast build rule for target.
 MakeHands/fast:
-	$(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/build
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/build
 .PHONY : MakeHands/fast
 
-main/main.o: main/main.cc.o
-.PHONY : main/main.o
+MakeHands.o: MakeHands.cc.o
+.PHONY : MakeHands.o
 
 # target to build an object file
-main/main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/main/main.cc.o
-.PHONY : main/main.cc.o
+MakeHands.cc.o:
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/MakeHands.cc.o
+.PHONY : MakeHands.cc.o
 
-main/main.i: main/main.cc.i
-.PHONY : main/main.i
+MakeHands.i: MakeHands.cc.i
+.PHONY : MakeHands.i
 
 # target to preprocess a source file
-main/main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/main/main.cc.i
-.PHONY : main/main.cc.i
+MakeHands.cc.i:
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/MakeHands.cc.i
+.PHONY : MakeHands.cc.i
 
-main/main.s: main/main.cc.s
-.PHONY : main/main.s
+MakeHands.s: MakeHands.cc.s
+.PHONY : MakeHands.s
 
 # target to generate assembly for a file
-main/main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/main/main.cc.s
-.PHONY : main/main.cc.s
+MakeHands.cc.s:
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/MakeHands.cc.s
+.PHONY : MakeHands.cc.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Janken"
 	@echo "... MakeHands"
-	@echo "... main/main.o"
-	@echo "... main/main.i"
-	@echo "... main/main.s"
+	@echo "... MakeHands.o"
+	@echo "... MakeHands.i"
+	@echo "... MakeHands.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/sedi/Documents/openprogram/JankenApp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

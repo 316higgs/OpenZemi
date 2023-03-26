@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.3/CMakeSystem.cmake"
+  "../src/MakeHands/CMakeLists.txt"
   "/opt/homebrew/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCXXCompiler.cmake.in"
   "/opt/homebrew/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
   "/opt/homebrew/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -94,9 +95,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/MakeHands/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Janken.dir/DependInfo.cmake"
+  "src/MakeHands/CMakeFiles/MakeHands.dir/DependInfo.cmake"
   )

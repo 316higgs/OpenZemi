@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Janken.dir/src/main.cc.o"
-  "CMakeFiles/Janken.dir/src/main.cc.o.d"
+  "CMakeFiles/Janken.dir/main/main.cc.o"
+  "CMakeFiles/Janken.dir/main/main.cc.o.d"
   "Janken"
   "Janken.pdb"
 )

@@ -19,7 +19,9 @@ BIN="${WORKDIR}/bin"
 if [ ! -e ${BIN} ]; then
 	mkdir ${BIN}
 fi
-mv ${BUILD}/${EXENAME} ${BIN}/${EXENAME}
+if [ -e ${BIN} ]; then
+	mv ${BUILD}/${EXENAME} ${BIN}/${EXENAME}
+fi
 
 source ${WORKDIR}/setup.sh
 if [ $? -eq 0 ]; then
