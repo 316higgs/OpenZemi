@@ -1,8 +1,0 @@
-===================
-    How to Use?
-===================
-
-1. Compile (executable file name should be same as the source file name)
-$ g++ -o [File name] [File name].cpp
-2. Run
-$ ./main
