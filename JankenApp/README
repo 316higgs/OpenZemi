@@ -17,8 +17,4 @@
      cmake_minimum_required(VERSION 2.8)
      project(Tutorial CXX)
      add_executable(main main.cc)
-2. Make a new directory under CMake, and build in it:
-   $ mkdir build
-   $ cd build
-   $ cmake ..
-   $ make 
+2. $ source ./run/BuildJanken.sh

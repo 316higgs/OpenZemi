@@ -142,6 +142,19 @@ MakeHands/fast:
 	$(MAKE) $(MAKESILENT) -f src/MakeHands/CMakeFiles/MakeHands.dir/build.make src/MakeHands/CMakeFiles/MakeHands.dir/build
 .PHONY : MakeHands/fast
 
+#=============================================================================
+# Target rules for targets named BattleManager
+
+# Build rule for target.
+BattleManager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BattleManager
+.PHONY : BattleManager
+
+# fast build rule for target.
+BattleManager/fast:
+	$(MAKE) $(MAKESILENT) -f src/BattleManager/CMakeFiles/BattleManager.dir/build.make src/BattleManager/CMakeFiles/BattleManager.dir/build
+.PHONY : BattleManager/fast
+
 main/main.o: main/main.cc.o
 .PHONY : main/main.o
 
@@ -174,6 +187,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BattleManager"
 	@echo "... Janken"
 	@echo "... MakeHands"
 	@echo "... main/main.o"

@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands/cmake_install.cmake")
+  include("/Users/sedi/Documents/openprogram/JankenApp/build/src/BattleManager/cmake_install.cmake")
 
 endif()
 

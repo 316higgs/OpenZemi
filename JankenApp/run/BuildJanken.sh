@@ -14,6 +14,7 @@ cd ${BUILD}
 
 cmake ..
 make
+cd ..
 
 BIN="${WORKDIR}/bin"
 if [ ! -e ${BIN} ]; then
@@ -23,7 +24,8 @@ if [ -e ${BIN} ]; then
 	mv ${BUILD}/${EXENAME} ${BIN}/${EXENAME}
 fi
 
-source ${WORKDIR}/setup.sh
+RUN="${WORKDIR}/run"
+source ${RUN}/setup.sh
 if [ $? -eq 0 ]; then
 	echo " "
 	echo "App: Janken --- ${BIN}/${EXENAME}"

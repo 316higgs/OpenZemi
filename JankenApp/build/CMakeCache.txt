@@ -112,11 +112,11 @@ CMAKE_OSX_ARCHITECTURES:STRING=
 
 //Minimum OS X version to target for deployment (at runtime); newer
 // APIs weak linked. Set to empty string for default value.
-CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
+CMAKE_OSX_DEPLOYMENT_TARGET:STRING=13.2
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -214,13 +214,13 @@ Janken_IS_TOP_LEVEL:STATIC=ON
 Janken_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp
 
 //Value Computed by CMake
-MakeHands_lib_BINARY_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands
+MakeHands_lib_BINARY_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/build/src/BattleManager
 
 //Value Computed by CMake
 MakeHands_lib_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-MakeHands_lib_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/src/MakeHands
+MakeHands_lib_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/src/BattleManager
 
 
 ########################
@@ -309,7 +309,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

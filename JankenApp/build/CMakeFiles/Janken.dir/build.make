@@ -93,6 +93,7 @@ Janken_EXTERNAL_OBJECTS =
 Janken: CMakeFiles/Janken.dir/main/main.cc.o
 Janken: CMakeFiles/Janken.dir/build.make
 Janken: src/MakeHands/libMakeHands.a
+Janken: src/BattleManager/libBattleManager.a
 Janken: CMakeFiles/Janken.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Janken"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Janken.dir/link.txt --verbose=$(VERBOSE)
