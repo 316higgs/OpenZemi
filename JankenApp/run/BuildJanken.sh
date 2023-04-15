@@ -1,9 +1,11 @@
 #!/bin/bash
 
-WORKDIR="/Users/sedi/Documents/openprogram/JankenApp"
+MY_APP="/Users/sedi/Documents/openprogram/JankenApp"
 EXENAME="Janken"
 
-BUILD="${WORKDIR}/build"
+echo ${MY_APP}
+source ${MY_APP}/setup.sh
+BUILD="${MY_APP}/build"
 if [ -e ${BUILD} ]; then
 	rm -rf ${BUILD}
 fi
@@ -16,7 +18,7 @@ cmake ..
 make
 cd ..
 
-BIN="${WORKDIR}/bin"
+BIN="${MY_APP}/bin"
 if [ ! -e ${BIN} ]; then
 	mkdir ${BIN}
 fi
@@ -24,8 +26,6 @@ if [ -e ${BIN} ]; then
 	mv ${BUILD}/${EXENAME} ${BIN}/${EXENAME}
 fi
 
-RUN="${WORKDIR}/run"
-source ${RUN}/setup.sh
 if [ $? -eq 0 ]; then
 	echo " "
 	echo "App: Janken --- ${BIN}/${EXENAME}"

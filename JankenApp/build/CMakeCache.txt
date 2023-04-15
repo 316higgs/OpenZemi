@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+BattleManager_lib_BINARY_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/build/src/BattleManager
+
+//Value Computed by CMake
+BattleManager_lib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+BattleManager_lib_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/src/BattleManager
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -214,13 +223,13 @@ Janken_IS_TOP_LEVEL:STATIC=ON
 Janken_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp
 
 //Value Computed by CMake
-MakeHands_lib_BINARY_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/build/src/BattleManager
+MakeHands_lib_BINARY_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/build/src/MakeHands
 
 //Value Computed by CMake
 MakeHands_lib_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-MakeHands_lib_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/src/BattleManager
+MakeHands_lib_SOURCE_DIR:STATIC=/Users/sedi/Documents/openprogram/JankenApp/src/MakeHands
 
 
 ########################

@@ -56,6 +56,8 @@ void MakeHands::SelectMyHand(bool inputchecker) {
 
     if (user==0) {
       std::cout << ">>" << "\e[38;5;58m\e[1m" << "  ERROR" << "\e[0m" << ": Invalid number is input (characters)" << std::endl;
+      //std::cout << "           Please input number 1(Rock), 2(SCISSORS), 3(PAPER)" << std::endl;
+      //std::cout << " " << std::endl;
       std::cout << ">>" << "   Aborted. Please try again." << std::endl;
       std::exit(EXIT_FAILURE);
     }

@@ -1,5 +1,5 @@
 cmake_minimum_required( VERSION 3.1 )
-project( MakeHands_lib 
+project( BattleManager_lib 
          VERSION 1.0.0
          DESCRIPTION "Status manager"
          LANGUAGES CXX )

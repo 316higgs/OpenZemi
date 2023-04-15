@@ -113,8 +113,8 @@ src/MakeHands/clean: src/MakeHands/CMakeFiles/MakeHands.dir/clean
 # Target rules for target CMakeFiles/Janken.dir
 
 # All Build rule for target.
-CMakeFiles/Janken.dir/all: src/BattleManager/CMakeFiles/BattleManager.dir/all
 CMakeFiles/Janken.dir/all: src/MakeHands/CMakeFiles/MakeHands.dir/all
+CMakeFiles/Janken.dir/all: src/BattleManager/CMakeFiles/BattleManager.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Janken.dir/build.make CMakeFiles/Janken.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sedi/Documents/openprogram/JankenApp/build/CMakeFiles --progress-num=3,4 "Built target Janken"

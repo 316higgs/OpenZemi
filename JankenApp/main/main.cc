@@ -24,19 +24,23 @@ int main() {
       myMakeHands.SelectMyHand(inputchecker);
       myMakeHands.GetMyHand(user);
 
-      //computer's hand
+      // computer's hand
       srand(time(&t) % RAND_MAX);
       comp = rand() % 3;
       myMakeHands.GetCompHand(comp);
 
       judge = myMakeHands.GetJudge(user, comp);
     }
-    usrBM.CommitHP(judge, &cpuBM);
-    usrBM.CheckLevel();
-    usrBM.ShowStatus();
-    if (usrBM.CheckHP()) return 0;
 
-    //Retry
+    // Update status
+    usrBM.CommitHP(judge, &cpuBM);
+    usrBM.CommitLevel();
+    //usrBM.CommitFactors();
+    usrBM.ShowStatus();
+    if (usrBM.CheckHP()) return 0;  // if HP is zero, end game
+
+
+    // Retry
     std::string retry;
     bool responsechecker = false;
     while (responsechecker==false) {
